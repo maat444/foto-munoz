@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTO MUÑOZ | Fotografía y Publicidad Visual</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts - Fuente juvenil y flexible -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Canvas para Animación de Fondo -->
+    <canvas id="studio-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/camera front logo.webp" alt="Logo Foto Muñoz" class="nav-logo">
+                <span class="brand-text">FOTO MUÑOZ</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- Texto en móvil primero, luego imagen en desktop -->
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="hero-content-wrapper">
+                        <span class="hero-span">En Anapoima, cundinamarca, Colombia:</span>
+                        <h1 class="hero-title">Capturamos tu esencia visual.</h1>
+                        <span class="hero-span">Expertos en fotografía profesional, publicidad visual e impresión en
+                            plotter.</span>
+                        <p class="hero-subtitle">
+                            Llevamos la imagen de tu negocio local al siguiente nivel con precisión y estilo.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contacto" class="btn btn-primary-custom">
+                                <i class="fas fa-camera me-2"></i> Cotizar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen redonda en móvil antes de texto, contrario en desktop -->
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-img-frame">
+                            <img src="images/foto muñoz.webp" alt="Fotógrafo Principal" class="hero-main-image">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones visuales personalizadas para tu negocio</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Cards de servicios -->
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" style="--bg-image: url('../images/fotografía.webp');">
+                        <div class="service-card-image"></div>
+                        <div class="service-card-content">
+                            <i class="fas fa-building service-icon"></i>
+                            <h3>Fotografía Corporativa</h3>
+                            <p class="mt-3">Retratos profesionales y cobertura de eventos empresariales para proyectar
+                                una imagen sólida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" style="--bg-image: url('../images/gorras\ foto.webp');">
+                        <div class="service-card-image"></div>
+                        <div class="service-card-content">
+                            <i class="fas fa-box-open service-icon"></i>
+                            <h3>Fotografía de Producto</h3>
+                            <p class="mt-3">Imágenes de alta definición para e-commerce y catálogos que resaltan los
+                                detalles de tus productos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" style="--bg-image: url('../images/plotter\ hd.webp');">
+                        <div class="service-card-image"></div>
+                        <div class="service-card-content">
+                            <i class="fas fa-print service-icon"></i>
+                            <h3>Impresión en Plotter</h3>
+                            <p class="mt-3">Viniles, lienzos y gigantografías de gran formato para la publicidad
+                                exterior de tu local.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" style="--bg-image: url('../images/diseño\ y\ marca\ personal.webp');">
+                        <div class="service-card-image"></div>
+                        <div class="service-card-content">
+                            <i class="fas fa-paint-brush service-icon"></i>
+                            <h3>Diseño de Marca</h3>
+                            <p class="mt-3">Creación de logotipos e identidad visual completa para hacer que tu negocio
+                                sea memorable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" style="--bg-image: url('../images/calcomanía\ carros.webp');">
+                        <div class="service-card-image"></div>
+                        <div class="service-card-content">
+                            <i class="fas fa-hashtag service-icon"></i>
+                            <h3>Redes Sociales</h3>
+                            <p class="mt-3">Packs de contenido mensual gestionados para mantener tu audiencia engagada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card" style="--bg-image: url('../images/fotografía\ eventos.webp');">
+                        <div class="service-card-image"></div>
+                        <div class="service-card-content">
+                            <i class="fas fa-glass-cheers service-icon"></i>
+                            <h3>Eventos Sociales</h3>
+                            <p class="mt-3">Cobertura fotográfica de bodas, graduaciones y fiestas privadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portafolio Reciente</h2>
+                <p class="section-subtitle">Momentos capturados, historias contadas</p>
+            </div>
+
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- Portada 1 -->
+                    <div class="carousel-item active">
+                        <div class="carousel-image-wrapper">
+                            <img src="images/stickers hd.webp" alt="Publicidad Exterior">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Publicidad Exterior</h5>
+                            <p>Campaña visual para centro comercial</p>
+                        </div>
+                    </div>
+                    <!-- Portada 2 -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-wrapper">
+                            <img src="images/agencia de diseño gráfico.jpg" alt="Catálogo de Moda">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Catálogo de Moda</h5>
+                            <p>Editorial para marca de ropa local</p>
+                        </div>
+                    </div>
+                    <!-- Portada 3 -->
+                    <div class="carousel-item">
+                        <div class="carousel-image-wrapper">
+                            <img src="images/Plotter.webp" alt="Branding Corporativo">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Branding Corporativo</h5>
+                            <p>Renovación de imagen para oficina de abogados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">            
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Cuéntanos tu proyecto, nosotros lo hacemos realidad</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <div>
+                            <div>
+                                <h4 style="text-align: center;">Foto Muñoz Anapoima</h4>
+                            </div>
+                        </div>
+                        <div class="contact-item">                            
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ubicación</h4>
+                                <p>Carrera 3 Número 5-54 Anapoima, Cundinamarca, Colombia.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Teléfono</h4>
+                                <p>+57 3214460067</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>fotomunozanapoima@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-hours">
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a Sábado: 8:00 - 19:00</p>
+                            <p>Domingo: 9:00 - 15:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form id="contact-form" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="name" name="name" required
+                                        placeholder="Tu nombre" autocomplete="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" required
+                                        placeholder="tucorreo@ejemplo.com" autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                        placeholder="+57 313567890" autocomplete="tel">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required
+                                        placeholder="Cuéntanos sobre tu proyecto..." autocomplete="off"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom w-100">
+                                    <i class="fas fa-paper-plane me-2"></i> Enviar Mensaje
+                                </button>
+                                <div id="form-status" class="mt-3 text-center"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Foto Muñoz</h2>
+                <p class="section-subtitle2">Trayectoria, experiencia y legado</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-content-p">Con más de una década de experiencia en el sector de la fotografía y publicidad visual, <span style="color: rgb(30, 165, 228);">Foto
+                        Muñoz</span> se ha consolidado como un referente en Anapoima, Cundinamarca. La empresa ha evolucionado 
+                        hasta convertirse en un aliado estratégico para negocios actualizándoles su imagen visual para destacar en el mercado
+                        competitivo actual.</p>
+
+                    <p class="about-content-p">Nuestro equipo combina la creatividad con
+                        técnicas y tecnología de punta para ofrecer soluciones visuales integrales. Desde la captura de
+                        imágenes impactantes hasta la creación de campañas publicitarias efectivas, cada proyecto es
+                        abordado con dedicación y atención al detalle.</p>
+
+                    <p class="about-content-p">En <span style="color: rgb(30, 165, 228);">Foto Muñoz</span>, creemos que una imagen vale más que mil palabras. Por eso, nos esforzamos por
+                        entender las necesidades únicas de cada cliente, adaptando nuestros servicios para maximizar su
+                        impacto visual y fortalecer su presencia de marca. Nuestro compromiso con la calidad y la
+                        satisfacción del cliente nos ha permitido construir relaciones duraderas y exitosas a lo largo
+                        de los años.</p>
+                </div>
+
+                <div class="about-profile fade-cycle">
+                    <img id="about-img" src="images/foto muñoz empresa1.webp" alt="Logo Corporativo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <img src="images/camera front logo.webp" alt="Logo Footer" class="footer-logo">
+            <h4 class="text-white mb-3">FOTO MUÑOZ</h4>
+            <p class="footer-p">Tu aliado en imagen visual y publicidad.</p>
+
+            <div class="mb-4">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="border-top border-secondary pt-3 mt-3">
+                <p class="footer-p small">
+                    &copy; <span id="year"></span> FOTO MUÑOZ. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/573214676203" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--Script personalizados -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
